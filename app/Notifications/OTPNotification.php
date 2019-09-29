@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class OTPNotification extends Notification
+class OTPNotification extends Notification implements ShouldQueue
 {
     use Queueable;
     private $OTP;
